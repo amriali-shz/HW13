@@ -145,6 +145,22 @@ values (14, 1), -- Maryam Hosseini is working on 'Mental Health Awareness'
        (50, 5);
 -- Reyhane Mollasalehi is working on 'Teen Counseling Program'
 
+insert into tasks (description, start_date, end_date, due_date, project_id, employee_id, status)
+values
+    ('Task 1 for Mental Health Awareness', '2024-01-15', '2024-02-15', '2024-02-20', 1, 14, 'Completed'),
+    ('Task 2 for Mental Health Awareness', '2024-02-01', null, '2024-03-01', 1, 15, 'In Progress'),
+
+    ('Task 1 for Child Psychology Research', '2024-03-10', null, '2024-04-15', 2, 38, 'Not Started'),
+    ('Task 2 for Child Psychology Research', '2024-03-15', '2024-03-30', '2024-04-01', 2, 39, 'Completed'),
+
+    ('Task 1 for AI in Psychiatry', '2024-02-20', '2024-03-10', '2024-03-15', 3, 58, 'Completed'),
+    ('Task 2 for AI in Psychiatry', '2024-03-01', null, '2024-04-01', 3, 59, 'In Progress'),
+
+    ('Task 1 for Financial Risk Analysis', '2024-04-10', null, '2024-05-01', 4, 10, 'Not Started'),
+
+    ('Task 1 for Teen Counseling Program', '2024-05-25', '2024-06-15', '2024-06-20', 5, 49, 'Completed'),
+    ('Task 2 for Teen Counseling Program', '2024-06-01', null, '2024-06-30', 5, 50, 'In Progress');
+
 
 --query n.1 of HW11
 select employees_id,
